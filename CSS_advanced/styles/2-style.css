@@ -1,0 +1,39 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set text color for body */
+body {
+  color: #161616;
+}
+
+/* Set text color for all anchor (<a>) elements */
+a {
+  color: #161616;
+}
+
+/* Hide elements with the class visually-hidden */
+.visually-hidden {
+  display: none;
+}
+
+/* Set text color for elements with class card-category */
+.card-category {
+  color: #D73953;
+}
+
+/* Set text color for elements with class section-tagline */
+.section-tagline {
+  color: #D73953;
+}
+
+/* Root element */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
