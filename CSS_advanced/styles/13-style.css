@@ -13,10 +13,26 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Set text color for all anchor (<a>) elements */
-a {
+/* Targets anchors with hyperlinks */
+a [href] {
   color: var(--text-color);
   text-decoration: none;
+  
+}
+
+/* Visited state */
+a[href]:visited {
+  font-style: italic;
+}
+
+/* Hover state */
+a[href]:hover {
+  text-decoration: underline;
+}
+
+/* Active state */
+a[href]:active {
+  background-color: var(--color-light-grey);
 }
 
 /* Set text font for headings */
@@ -38,6 +54,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Set text alignment for section header */
 .section-header {
     text-align: var(--section-header-align);
+}
+
+/* Set text margin and colour for title element */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
 }
 
 /* Set text color for elements with class section-tagline */
@@ -70,4 +95,6 @@ h1, h2, h3, h4, h5, h6 {
   --line-height-big: 1.8;
   --section-header-align: center;
   --section-tagline-transform: uppercase;
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
 }
